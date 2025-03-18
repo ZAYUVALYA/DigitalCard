@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasyim & Phoebe's Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #8b5e3c;
+            --secondary-color: #e8d8c9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.55)), 
+                        url('https://i.pinimg.com/736x/6a/bb/a0/6abba02d4b23a5aa41ebd2fd506266ea.jpg');
+            background-size: cover;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .couple-names {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+        }
+
+        .wedding-date {
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            margin: 20px 0;
+        }
+
+        .couple-photos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .couple-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: var(--secondary-color);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            background: rgba(232,216,201,0.2);
+            margin: 30px 0;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            border-radius: 50%;
+        }
+
+        .rsvp-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .couple-names {
+                font-size: 2.5rem;
+            }
+            
+            .couple-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .timeline-item:before {
+                left: -10px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop id="weddingAudio">
+        <source src="loveli lori & ovg! - love for you.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="couple-names">Hasyim & Phoebe</h1>
+            <div class="wedding-date">April 12, 2025</div>
+            <p class="lead">"In every heart there is a room, a sanctuary safe and strong<br> 
+            To heal the wounds from lovers past until a new one comes along"</p>
+            
+            <div class="couple-photos">
+                <img src="hasyim.png" alt="Hasyim" class="couple-img">
+                <img src="phoebe.png" alt="Phoebe" class="couple-img">
+            </div>
+        </section>
+
+        <section class="py-5">
+            <h2 class="section-title text-center">Our Love Story</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p>Two souls, one destiny. From the first glance to this moment of forever, 
+                    our journey has been written in the stars. Through laughter and growth, 
+                    we've built a love that knows no bounds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <h2 class="section-title text-center">Wedding Events</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Akad Nikah Ceremony</h3>
+                    <p>April 12, 2025 | 09:00 AM<br>
+                    Grand Ballroom, Grand Tocky Hotel, Jinzhou</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Wedding Reception</h3>
+                    <p>April 12, 2025 | 011:00 AM<br>
+                    Grand Ballroom, Grand Tocky Hotel, Jinzhou</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="rsvp-form">
+                <h2 class="section-title text-center">RSVP</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" required>
+                            <option value="">Number of Guests</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Confirm Attendance</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>"A successful marriage requires falling in love many times, always with the same person."</p>
+        <div class="social-links">
+            <a href="#" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark mx-2"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.couple-names, .wedding-date', {
+            delay: 300,
+            distance: '50px',
+            origin: 'top',
+            reset: true
+        });
+
+        ScrollReveal().reveal('.couple-img', {
+            delay: 500,
+            distance: '50px',
+            origin: 'bottom',
+            interval: 200
+        });
+
+        ScrollReveal().reveal('.timeline-item', {
+            delay: 300,
+            distance: '50px',
+            origin: 'right',
+            interval: 200
+        });
+
+        // Auto-play music handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('weddingAudio');
+            audio.play().catch(() => {
+                // Handle autoplay restrictions
+                const playButton = document.createElement('button');
+                playButton.innerHTML = 'Play Music';
+                playButton.className = 'btn btn-secondary position-fixed bottom-0 end-0 m-3';
+                playButton.onclick = () => audio.play();
+                document.body.appendChild(playButton);
+            });
+        });
+    </script>
+</body>
+</html>
